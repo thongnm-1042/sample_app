@@ -1,0 +1,7 @@
+link:
+  home: "https://www.railstutorial.org/"
+  help: "https://www.railstutorial.org/help"
+  about: "https://www.railstutorial.org/book"
+  contact: "https://www.railstutorial.org/contact"
+text:
+  title: "Ruby on Rails Tutorial Sample App"

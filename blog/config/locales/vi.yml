@@ -1,0 +1,20 @@
+vi:
+  layouts:
+    application:
+      title: "Ung dung don gian"
+      english: "Tieng Anh"
+      vietnam: "Tieng Viet"
+      intro: "Khoa hoc Ruby On Rails"
+  static_pages:
+    home:
+      home: "Khoa hoc gioi thieu"
+      title: "Trang chu"
+    contact:
+      contact : "Lien lac khoa hoc"
+      title: "Lien lac"
+    help:
+      help : "Tro giup khoa hoc"
+      title: "Tro giup"
+    about:
+      about: "Gioi thieu khoa hoc"
+      title: "Gioi thieu"
