@@ -70,3 +70,14 @@ Lint/AssignmentInCondition:
   Description: "Don't use assignment in conditions."
   Enabled: false
 
+Rails/HelperInstanceVariable:
+  Description: "Do not use instance variables in helpers"
+  Enabled: false
+
+Rails/InverseOf:
+  Description: "Prevent fetching loaded data again through a relationship."
+  Enabled: false
+
+Rails/ReflectionClassName:
+  Description: "Use a string for `class_name` option value in the definition of a reflection."
+  Enabled: false
