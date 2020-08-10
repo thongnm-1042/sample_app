@@ -9,6 +9,7 @@ vi:
     home:
       home: "Khoa hoc gioi thieu"
       title: "Trang chu"
+      signup: "Dang ki ngay!"
     contact:
       contact : "Lien lac khoa hoc"
       title: "Lien lac"
@@ -18,3 +19,7 @@ vi:
     about:
       about: "Gioi thieu khoa hoc"
       title: "Gioi thieu"
+  users:
+    new:
+      title: "Dang ki"
+      text: "Day se la trang dang ki cho nguoi dung."

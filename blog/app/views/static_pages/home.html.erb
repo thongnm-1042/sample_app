@@ -3,6 +3,7 @@
   <h2>
     <%= link_to t(".title"), Settings.link.home %>
   </h2>
-    <%= link_to t(".title"), Settings.link.home, class: "btn btn-lg btn-primary" %>
+  <%= link_to t(".signup"), signup_path, class: "btn btn-lg btn-primary" %>
 </div>
-<%= link_to image_tag("rails.png", alt: "Rails logo", width: "200px"), Settings.link.home %>
+<%= link_to image_tag("rails.png", alt: "Rails logo", width: "200px"),
+  Settings.link.home %>
