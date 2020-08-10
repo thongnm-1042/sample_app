@@ -9,6 +9,7 @@ en:
     home:
       home: "Ruby on Rails Tutorial"
       title: "Home"
+      signup: "Sign up now!"
     contact:
       contact : "Ruby on Rails Contact"
       title: "Contact"
@@ -18,3 +19,7 @@ en:
     about:
       about: "Rails About"
       title: "About"
+  users:
+    new:
+      title: "Sign up"
+      text:  "This will be a signup page for new users."

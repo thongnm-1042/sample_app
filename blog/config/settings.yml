@@ -5,3 +5,8 @@ link:
   contact: "https://www.railstutorial.org/contact"
 text:
   title: "Ruby on Rails Tutorial Sample App"
+  string_validate: !ruby/regexp '/\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i'
+number:
+  max_name: 50
+  max_email: 255
+  min_pass: 6
