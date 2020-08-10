@@ -1,0 +1,12 @@
+<header class="navbar navbar-fixed-top navbar-inverse">
+  <div class="container">
+    <%= link_to t("layouts.application.title"), Settings.link.home , id: "logo" %>
+    <nav>
+      <ul class="nav navbar-nav navbar-right">
+        <li><%= link_to t("static_pages.home.title"), home_path %></li>
+        <li><%= link_to t("static_pages.help.title"), help_path %></li>
+        <li><%= link_to t("static_pages.about.title"), about_path %></li>
+      </ul>
+    </nav>
+  </div>
+</header>
