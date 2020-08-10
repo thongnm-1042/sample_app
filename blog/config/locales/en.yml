@@ -5,6 +5,10 @@ en:
       english: "EngLish"
       vietnam: "Vietnamese"
       intro: "Ruby On Rails tutorial"
+      inform_success: "Welcome to Simple App!"
+      inform_failed: "Create account failed!"
+      invalid_user: "User invalid!"
+      form: "The form contains"
   static_pages:
     home:
       home: "Ruby on Rails Tutorial"
@@ -23,3 +27,9 @@ en:
     new:
       title: "Sign up"
       text:  "This will be a signup page for new users."
+      signup: "Sign up now!"
+      create: "Create my account"
+      name: "name"
+      email: "email"
+      password: "password"
+      confirmation: "password confirmation"

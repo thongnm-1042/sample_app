@@ -5,6 +5,10 @@ vi:
       english: "Tieng Anh"
       vietnam: "Tieng Viet"
       intro: "Khoa hoc Ruby On Rails"
+      inform_success: "Chao mung den voi Simple App!"
+      inform_failed: "Dang ky tai khoan that bai!"
+      invalid_user: "Nguoi dung khong ton tai!"
+      form: "Form nay bao gom"
   static_pages:
     home:
       home: "Khoa hoc gioi thieu"
@@ -22,4 +26,10 @@ vi:
   users:
     new:
       title: "Dang ki"
-      text: "Day se la trang dang ki cho nguoi dung."
+      text:  "Day se la trang dang ki cho nguoi dung."
+      signup: "Dang ki ngay!"
+      create: "Tao tai khoan"
+      name: "Ten tai khoan"
+      email: "Email"
+      password: "Mat khau"
+      confirmation: "Xac nhan mat khau"
