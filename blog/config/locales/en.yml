@@ -9,6 +9,13 @@ en:
       inform_failed: "Create account failed!"
       invalid_user: "User invalid!"
       form: "The form contains"
+      login_fail: "Invalid email/password combination"
+      users: "Users"
+      account: "Accounts"
+      profile: "Profile"
+      setting: "Settings"
+      logout: "Log out"
+      login: "Log in"
   static_pages:
     home:
       home: "Ruby on Rails Tutorial"
@@ -33,3 +40,10 @@ en:
       email: "email"
       password: "password"
       confirmation: "password confirmation"
+  sessions:
+    new:
+      signup: "Sign up now!"
+      login: "Login"
+      email: "email"
+      password: "password"
+      new_users: "New user?"
