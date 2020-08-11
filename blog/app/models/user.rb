@@ -1,7 +1,7 @@
 class User < ApplicationRecord
   PERMIT_ATTRIBUTES = %i(name email password password_confirmation).freeze
   attr_accessor :remember_token
-
+  
   validates :name, presence: true, length: {maximum: Settings.number.max_name}
   validates :email, presence: true,
       length: {maximum: Settings.number.max_email},
