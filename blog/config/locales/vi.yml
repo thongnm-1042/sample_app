@@ -9,6 +9,15 @@ vi:
       inform_failed: "Dang ky tai khoan that bai!"
       invalid_user: "Nguoi dung khong ton tai!"
       form: "Form nay bao gom"
+      login_fail: "Email hoac mat khau sai !!!"
+      users: "Nguoi dung"
+      account: "Tai khoan"
+      profile: "Thong tin ca nhan"
+      setting: "Cai dat"
+      logout: "Dang xuat"
+      login: "Dang nhap"
+      remember: "Ghi nho mat khau"
+      login_success: "Dang nhap thanh cong, xin chao!"
   static_pages:
     home:
       home: "Khoa hoc gioi thieu"
@@ -33,3 +42,12 @@ vi:
       email: "Email"
       password: "Mat khau"
       confirmation: "Xac nhan mat khau"
+  sessions:
+    new:
+      name: "Ten dang nhap"
+      email: "email"
+      password: "Mat khau"
+      login: "Dang nhap"
+      signup: "Dang ki tai khoan ngay!"
+      remember_me: "Nho mat khau!"
+      new_member: "Thanh vien moi ?"
