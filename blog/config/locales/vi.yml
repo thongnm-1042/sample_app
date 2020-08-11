@@ -16,6 +16,8 @@ vi:
       setting: "Cai dat"
       logout: "Dang xuat"
       login: "Dang nhap"
+      remember: "Ghi nho mat khau"
+      login_success: "Dang nhap thanh cong, xin chao!"
   static_pages:
     home:
       home: "Khoa hoc gioi thieu"
@@ -42,8 +44,10 @@ vi:
       confirmation: "Xac nhan mat khau"
   sessions:
     new:
-      signup: "Dang ki ngay !!"
-      login: "Dang nhap"
+      name: "Ten dang nhap"
       email: "email"
       password: "Mat khau"
-      new_users: "Nguoi dung moi?"
+      login: "Dang nhap"
+      signup: "Dang ki tai khoan ngay!"
+      remember_me: "Nho mat khau!"
+      new_member: "Thanh vien moi ?"

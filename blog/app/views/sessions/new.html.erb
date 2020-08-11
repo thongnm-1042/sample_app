@@ -2,13 +2,17 @@
   <h1><%= t ".login" %></h1>
   <div class="row">
     <div class="col-md-6 col-md-offset-3">
-      <%= form_for(:session, url: login_path) do |f| %>
+      <%= form_for :session, url: login_path do |f| %>
         <%= f.label t ".email" %>
         <%= f.email_field :email, class: "form-control" %>
         <%= f.label t ".password" %>
         <%= f.password_field :password, class: "form-control" %>
+        <%= f.label t(".remember_me"), class: "checkbox inline" do %>
+        <%= f.check_box :remember_me %>
+          <span><%= t "layouts.application.remember" %></span>
+        <% end %>
         <%= f.submit t(".login"), class: "btn btn-primary" %>
       <% end %>
-      <p><%= t ".new_users" %><%= link_to t(".signup"), signup_path %></p>
+      <p><%= t ".new_member" <%= link_to t(".signup"), signup_path %></p>
     </div>
 </div>

@@ -16,6 +16,8 @@ en:
       setting: "Settings"
       logout: "Log out"
       login: "Log in"
+      remember: "Remember me on this computer"
+      login_success: "Log in successfull, hello!"
   static_pages:
     home:
       home: "Ruby on Rails Tutorial"
@@ -42,8 +44,10 @@ en:
       confirmation: "password confirmation"
   sessions:
     new:
-      signup: "Sign up now!"
-      login: "Login"
+      name: "name"
       email: "email"
       password: "password"
-      new_users: "New user?"
+      login: "login"
+      signup: "Sign up now!"
+      remember_me: "remember_me"
+      new_member: "New user ?"
