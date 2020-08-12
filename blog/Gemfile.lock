@@ -68,9 +68,14 @@ GEM
       msgpack (~> 1.0)
     bootsnap (1.4.7-java)
       msgpack (~> 1.0)
+    bootstrap-kaminari-views (0.0.5)
+      kaminari (>= 0.13)
+      rails (>= 3.1)
     bootstrap-sass (3.4.1)
       autoprefixer-rails (>= 5.2.1)
       sassc (>= 2.0.0)
+    bootstrap-will_paginate (1.0.0)
+      will_paginate
     builder (3.2.4)
     capybara (3.33.0)
       addressable
@@ -130,6 +135,8 @@ GEM
     erubi (1.9.0)
     erubis (2.7.0)
     execjs (2.7.0)
+    faker (2.1.2)
+      i18n (>= 0.8)
     ffi (1.13.1)
     ffi (1.13.1-java)
     ffi (1.13.1-x64-mingw32)
@@ -140,8 +147,22 @@ GEM
       concurrent-ruby (~> 1.0)
     jaro_winkler (1.5.4)
     jaro_winkler (1.5.4-java)
+    jbuilder (2.10.0)
+      activesupport (>= 5.0.0)
     json (2.3.1)
     json (2.3.1-java)
+    kaminari (1.2.1)
+      activesupport (>= 4.1.0)
+      kaminari-actionview (= 1.2.1)
+      kaminari-activerecord (= 1.2.1)
+      kaminari-core (= 1.2.1)
+    kaminari-actionview (1.2.1)
+      actionview
+      kaminari-core (= 1.2.1)
+    kaminari-activerecord (1.2.1)
+      activerecord
+      kaminari-core (= 1.2.1)
+    kaminari-core (1.2.1)
     listen (3.2.1)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
@@ -302,6 +323,7 @@ GEM
     websocket-driver (0.7.3-java)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
+    will_paginate (3.1.8)
     xpath (3.2.0)
       nokogiri (~> 1.8)
     zeitwerk (2.4.0)
@@ -316,9 +338,14 @@ PLATFORMS
 DEPENDENCIES
   bcrypt (= 3.1.13)
   bootsnap (>= 1.4.2)
+  bootstrap-kaminari-views
   bootstrap-sass (= 3.4.1)
+  bootstrap-will_paginate (= 1.0.0)
   capybara (>= 2.15)
   config
+  faker (= 2.1.2)
+  jbuilder (~> 2.5)
+  kaminari
   listen (~> 3.2)
   mysql2
   puma (~> 4.1)
@@ -337,6 +364,7 @@ DEPENDENCIES
   web-console (>= 3.3.0)
   webdrivers
   webpacker (~> 4.0)
+  will_paginate (= 3.1.8)
 
 RUBY VERSION
    ruby 2.7.0p0

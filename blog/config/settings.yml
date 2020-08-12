@@ -11,3 +11,6 @@ number:
   max_email: 255
   min_pass: 6
   checkbox: 1
+  size: 50
+user:
+  per_page: 2
