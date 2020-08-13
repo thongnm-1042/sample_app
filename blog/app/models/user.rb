@@ -1,6 +1,6 @@
 class User < ApplicationRecord
   PERMIT_ATTRIBUTES = %i(name email password password_confirmation).freeze
-  attr_accessor :remember_token
+  attr_accessor :remember_token, :activation_token, :reset_token
 
   validates :name, presence: true,
       length: {maximum: Settings.number.max_name}
@@ -13,6 +13,9 @@ class User < ApplicationRecord
       allow_nil: true
 
   has_secure_password
+
+  before_save :downcase_email
+  before_create :create_activation_digest
 
   class << self
     def digest string
@@ -34,21 +37,42 @@ class User < ApplicationRecord
     update remember_digest: User.digest(remember_token)
   end
 
-  def authenticated? remember_token
-    return false unless remember_digest
+  def authenticated? attribute, token
+    digest = send "#{attribute}_digest"
+    return false unless digest
 
-    BCrypt::Password.new(remember_digest).is_password? remember_token
+    BCrypt::Password.new(digest).is_password? token
   end
 
   def forget
     update remember_digest: nil
   end
 
-  before_save :downcase_email
+  def activate
+    update activated: true, activated_at: Time.zone.now
+  end
+
+  def create_reset_digest
+    self.reset_token = User.new_token
+    update reset_digest: User.digest(reset_token), reset_sent_at: Time.zone.now
+  end
+
+  def send_password_reset_email
+    UserMailer.password_reset(self).deliver_now
+  end
+
+  def password_reset_expired?
+    reset_sent_at < Settings.number.time.hours.ago
+  end
 
   private
 
   def downcase_email
     email.downcase!
+  end
+
+  def create_activation_digest
+    self.activation_token = User.new_token
+    self.activation_digest = User.digest activation_token
   end
 end
