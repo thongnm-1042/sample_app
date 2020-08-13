@@ -32,7 +32,11 @@ Rails.application.configure do
   config.active_storage.service = :local
 
   # Don't care if the mailer can't send.
-  config.action_mailer.raise_delivery_errors = false
+  config.action_mailer.raise_delivery_errors = true
+
+  host = ENV["HOST"]
+
+  config.action_mailer.default_url_options = {host: host, protocol: "http"}
 
   config.action_mailer.perform_caching = false
 
@@ -59,5 +63,14 @@ Rails.application.configure do
   # Use an evented file watcher to asynchronously detect changes in source code,
   # routes, locales, etc. This feature depends on the listen gem.
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
-  config.hosts.clear
+
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+    :user_name => ENV["GMAIL_USERNAME"],
+    :password => ENV["GMAIL_PASSWORD"],
+    :address => ENV["GMAIL_ADDRESS"],
+    :domain => ENV["GMAIL_DOMAIN"],
+    :port => ENV["GMAIL_PORT"],
+    :authentication => :plain
+  }
 end

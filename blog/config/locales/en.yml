@@ -20,6 +20,10 @@ en:
       login_success: "Log in successfull, hello!"
       delete: "delete"
       confirm: "You sure?"
+      activate_success: "Activate successfull"
+      activate_fail: "Activate failed"
+      email_check: "Please check your email to activate your account."
+      title_activate: "Account activation"
   static_pages:
     home:
       home: "Ruby on Rails Tutorial"
