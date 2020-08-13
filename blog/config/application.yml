@@ -1,0 +1,7 @@
+GMAIL_USERNAME: "thiensangkdtt@gmail.com"
+GMAIL_PASSWORD: "1970minh"
+GMAIL_PORT: 587
+GMAIL_DOMAIN: "localhost:3000"
+GMAIL_ADDRESS: "smtp.gmail.com"
+HOST: "localhost:3000"
+GMAIL_DEFAULT: "thiensangkdtt@gmail.com"

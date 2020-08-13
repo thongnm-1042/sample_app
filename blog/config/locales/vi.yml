@@ -18,6 +18,8 @@ vi:
       login: "Dang nhap"
       remember: "Ghi nho mat khau"
       login_success: "Dang nhap thanh cong, xin chao!"
+      delete: "Xoa"
+      confirm: "Ban chac chan chua?"
   static_pages:
     home:
       home: "Khoa hoc gioi thieu"
@@ -42,6 +44,18 @@ vi:
       email: "Email"
       password: "Mat khau"
       confirmation: "Xac nhan mat khau"
+      update_success: "Cap nhat thong tin thanh cong"
+      update_fail: "Cap nhat thong tin that bai"
+      delete: "Xoa nguoi dung thanh cong"
+      delete_fail: "Xoa nguoi dung that bai!"
+      cautious_login: "Xin hay dang nhap truoc"
+      not_correct: "Hanh dong khong hop le!"
+      notfound: "Khong tim thay nguoi dung!"
+    edit:
+      title: "Cap nhat nguoi dung"
+      change: "Thay doi"
+    index:
+      title: "Nguoi dung"
   sessions:
     new:
       name: "Ten dang nhap"

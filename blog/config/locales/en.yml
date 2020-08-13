@@ -18,6 +18,8 @@ en:
       login: "Log in"
       remember: "Remember me on this computer"
       login_success: "Log in successfull, hello!"
+      delete: "delete"
+      confirm: "You sure?"
   static_pages:
     home:
       home: "Ruby on Rails Tutorial"
@@ -42,6 +44,18 @@ en:
       email: "email"
       password: "password"
       confirmation: "password confirmation"
+      update_success: "Profile updated"
+      update_fail: "Profile failed"
+      delete: "User deleted"
+      delete_fail: "User deleted failed !"
+      cautious_login: "Please log in."
+      not_correct: "Invalid action!"
+      notfound: "Invalid user!"
+    edit:
+      title: "Update User"
+      change: "Change"
+    index:
+      title: "All users"
   sessions:
     new:
       name: "name"

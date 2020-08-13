@@ -8,7 +8,7 @@ class SessionsController < ApplicationController
       check_remember user
       remember user
       flash[:success] = t "layouts.application.login_success"
-      redirect_to user
+      redirect_back_or user
     else
       flash.now[:danger] = t "layouts.application.login_fail"
       render :new
@@ -16,7 +16,7 @@ class SessionsController < ApplicationController
   end
 
   def destroy
-    log_out
+    log_out if logged_in?
     redirect_to root_url
   end
 end
