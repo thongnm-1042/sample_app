@@ -12,6 +12,7 @@
 
 ActiveRecord::Schema.define(version: 2020_08_13_135359) do
 
+ActiveRecord::Schema.define(version: 2020_08_12_152558) do
   create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=latin1", force: :cascade do |t|
     t.string "name"
     t.string "email"
@@ -27,5 +28,4 @@ ActiveRecord::Schema.define(version: 2020_08_13_135359) do
     t.datetime "reset_sent_at"
     t.index ["email"], name: "index_users_on_email", unique: true
   end
-
 end
