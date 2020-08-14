@@ -20,6 +20,10 @@ vi:
       login_success: "Dang nhap thanh cong, xin chao!"
       delete: "Xoa"
       confirm: "Ban chac chan chua?"
+      activate_success: "Activate thanh cong"
+      activate_fail: "Activate that bai"
+      email_check: "Xin hay kiem tra email cua minh."
+      title_activate: "Xac thuc dang nhap"
   static_pages:
     home:
       home: "Khoa hoc gioi thieu"
