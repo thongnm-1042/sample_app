@@ -24,6 +24,11 @@ en:
       activate_fail: "Activate failed"
       email_check: "Please check your email to activate your account."
       title_activate: "Account activation"
+      not_empty: "can't be empty"
+      password_reset: "Password has been reset."
+      password_reset_not: "Password hasn't been reset."
+      expired: "Password reset has expired."
+      activate: "Activate"
   static_pages:
     home:
       home: "Ruby on Rails Tutorial"
@@ -69,3 +74,17 @@ en:
       signup: "Sign up now!"
       remember_me: "remember_me"
       new_member: "New user ?"
+      forgot password: "forgot password?"
+  password_resets:
+    new:
+      title: "Forgot password"
+      submit: "Submit"
+    edit:
+      title: "Reset password"
+      submit: "Update password"
+      password: "Password"
+      password_confirm: "Password_confirmation"
+  user_mailer:
+    password_reset:
+      password_reset: "Reset Your Password!"
+      decription: "Follow the instruction!"

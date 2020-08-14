@@ -24,6 +24,11 @@ vi:
       activate_fail: "Activate that bai"
       email_check: "Xin hay kiem tra email cua minh."
       title_activate: "Xac thuc dang nhap"
+      not_empty: "Khong the de trong"
+      password_reset: "Mat khau da duoc reset."
+      password_reset_not: "Mat khau chua duoc reset."
+      expired: "Da qua han de thay doi mat khau."
+      activate: "Kich hoat"
   static_pages:
     home:
       home: "Khoa hoc gioi thieu"
@@ -69,3 +74,17 @@ vi:
       signup: "Dang ki tai khoan ngay!"
       remember_me: "Nho mat khau!"
       new_member: "Thanh vien moi ?"
+      forgot password: "Quen mat khau?"
+  password_resets:
+    new:
+      title: "Quen mat khau"
+      submit: "Submit"
+    edit:
+      title: "Reset mat khau"
+      submit: "Cap nhat mau khau"
+      password: "Mat khau"
+      password_confirm: "Xac nhan mat khau"
+  user_mailer:
+    password_reset:
+      password_reset: "Reset mat khau!"
+      decription: "Lam theo huong dan!"
