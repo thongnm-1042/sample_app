@@ -65,6 +65,8 @@ vi:
       cautious_login: "Xin hay dang nhap truoc"
       not_correct: "Hanh dong khong hop le!"
       notfound: "Khong tim thay nguoi dung!"
+      follow: "Theo doi"
+      un_follow: "Huy theo doi"
     edit:
       title: "Cap nhat nguoi dung"
       change: "Thay doi"
@@ -76,6 +78,20 @@ vi:
       count:
         one: "%{count} loi"
         other: "%{count} loi"
+    followers:
+      count:
+        one: "%{count} nguoi theo doi"
+        other: "%{count} nguoi theo doi"
+    following:
+      count:
+        one: "%{count} dang the doi"
+        other: "%{count} dang the doi"
+    controllers:
+      not_allow: "Ban khong co quyen admin"
+      following: "Theo doi"
+      follower: "Nguoi theo doi"
+    show_follow:
+      title: "Theo doi"
   sessions:
     new:
       name: "Ten dang nhap"
@@ -113,3 +129,7 @@ vi:
     size_file: "Phai be hon 5MB"
     posted: "Da dang"
     ago: "Da qua"
+    title: "Cac bai viet:"
+    count:
+        one: "%{count} bai viet"
+        other: "%{count} bai viet"

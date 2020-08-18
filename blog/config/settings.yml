@@ -24,3 +24,7 @@ accept:
 files:
   number: 1024
   image: "rails.png"
+  avatar: 30
+theme:
+  name_bootstrap: "twitter-bootstrap-3"
+  image: "200px"

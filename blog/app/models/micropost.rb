@@ -11,13 +11,14 @@ class Micropost < ApplicationRecord
   validates :content, presence: true,
      length: {maximum: Settings.number.max_content}
   validates :image, content_type: {in: Settings.number.in,
-                                          message:
-                                            I18n.t("microposts.image_valid")},
+                                   message:
+                                    I18n.t("microposts.image_valid")},
                            size: {less_than_or_equal_to:
                                     Settings.number.size_less.megabytes,
                                   message: I18n.t("microposts.size_file")}
 
   scope :order_created_at, ->{order created_at: :desc}
+  scope :micropost_feed, ->user_ids{where user_id: user_ids}
 
   def display_image
     image.variant resize_to_limit: Settings.number.resize_to_limit
