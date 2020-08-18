@@ -1,0 +1,8 @@
+<%= link_to gravatar_for(current_user, size: Settings.number.size), current_user %>
+<h1><%= current_user.name %></h1>
+<span>
+  <%= link_to t("microposts.new.view"), current_user %>
+</span>
+<span>
+  <%= t "microposts.new.count", count: current_user.microposts.size %>
+</span>

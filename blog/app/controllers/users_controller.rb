@@ -9,10 +9,8 @@ class UsersController < ApplicationController
   end
 
   def show
-    return if @user
-
-    flash[:danger] = t "layouts.application.invalid_user"
-    redirect_to root_path
+    @microposts = @user.microposts.page(params[:page])
+                            .per Settings.user.per_page
   end
 
   def new
@@ -71,7 +69,7 @@ class UsersController < ApplicationController
     return if current_user? @user
 
     flash[:warning] = t "users.new.not_correct"
-    redirect_to(root_url) unless current_user?(@user)
+    redirect_to root_url
   end
 
   def admin_user
@@ -82,6 +80,7 @@ class UsersController < ApplicationController
     @user = User.find_by id: params[:id]
     return if @user
 
-    flash[:danger] = t "users.new.notfound"
+    flash[:danger] = t "users.new.not_found"
+    redirect_to root_path
   end
 end

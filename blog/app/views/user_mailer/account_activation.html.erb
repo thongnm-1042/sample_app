@@ -3,5 +3,5 @@
 <p>
   <%= t "layouts.application.inform_success" %>
 </p>
-<%= link_to t("layouts.application.activate"),
+<%= link_to t("layouts.application.activates"),
   edit_account_activation_url(id: @user.activation_token,email: @user.email) %>

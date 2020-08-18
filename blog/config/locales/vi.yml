@@ -28,12 +28,17 @@ vi:
       password_reset: "Mat khau da duoc reset."
       password_reset_not: "Mat khau chua duoc reset."
       expired: "Da qua han de thay doi mat khau."
+      require_login: "Ban can login truoc da !"
       activate: "Kich hoat"
+      created: "Tao bai viet thanh cong!!"
+      created_failed: "Tao bai viet that bai!!"
   static_pages:
     home:
       home: "Khoa hoc gioi thieu"
       title: "Trang chu"
       signup: "Dang ki ngay!"
+      intro: "Micropost Feed"
+      image: "Logo anh"
     contact:
       contact : "Lien lac khoa hoc"
       title: "Lien lac"
@@ -65,6 +70,12 @@ vi:
       change: "Thay doi"
     index:
       title: "Nguoi dung"
+    show:
+      microposts: "Bai dang"
+    signup:
+      count:
+        one: "%{count} loi"
+        other: "%{count} loi"
   sessions:
     new:
       name: "Ten dang nhap"
@@ -88,3 +99,17 @@ vi:
     password_reset:
       password_reset: "Reset mat khau!"
       decription: "Lam theo huong dan!"
+  microposts:
+    new:
+      content: "Tao ra bai viet moi..."
+      post: "Bai viet"
+      count:
+        one: "%{count} bai viet"
+        other: "%{count} bai viet"
+      view: "Xem trang ca nhan cua toi"
+      deleted: "Xoa thanh cong!"
+      deleted_failed: "Xoa that bai"
+    image_valid: "Xin dua anh phu hop"
+    size_file: "Phai be hon 5MB"
+    posted: "Da dang"
+    ago: "Da qua"

@@ -28,12 +28,17 @@ en:
       password_reset: "Password has been reset."
       password_reset_not: "Password hasn't been reset."
       expired: "Password reset has expired."
+      require_login: "You have to login first!"
       activate: "Activate"
+      created: "Post Created!!"
+      created_failed: "Post Created failed!!"
   static_pages:
     home:
       home: "Ruby on Rails Tutorial"
       title: "Home"
       signup: "Sign up now!"
+      intro: "Micropost Feed"
+      image: "Rails logo"
     contact:
       contact : "Ruby on Rails Contact"
       title: "Contact"
@@ -59,12 +64,18 @@ en:
       delete_fail: "User deleted failed !"
       cautious_login: "Please log in."
       not_correct: "Invalid action!"
-      notfound: "Invalid user!"
+      not_found: "Invalid user!"
     edit:
       title: "Update User"
       change: "Change"
     index:
       title: "All users"
+    show:
+      microposts: "Microposts"
+    signup:
+      count:
+        one: "%{count} error"
+        other: "%{count} errors"
   sessions:
     new:
       name: "name"
@@ -88,3 +99,17 @@ en:
     password_reset:
       password_reset: "Reset Your Password!"
       decription: "Follow the instruction!"
+  microposts:
+    new:
+      content: "Compose new micropost..."
+      post: "Post"
+      count:
+        one: "%{count} micropost"
+        other: "%{count} microposts"
+      view: "view my profile"
+      deleted: "Micropost created!"
+      deleted_failed: "Micropost created failed!"
+    image_valid: "must be a valid image format"
+    size_file: "should be less than 5MB"
+    posted: "Posted"
+    ago: "Ago"
