@@ -65,7 +65,8 @@ en:
       cautious_login: "Please log in."
       not_correct: "Invalid action!"
       not_found: "Invalid user!"
-    edit:
+      follow: "Follow"
+      un_follow: "Unfollow"
       title: "Update User"
       change: "Change"
     index:
@@ -76,6 +77,20 @@ en:
       count:
         one: "%{count} error"
         other: "%{count} errors"
+    followers:
+      count:
+        one: "%{count} followers"
+        other: "%{count} followers"
+    following:
+      count:
+        one: "%{count} following"
+        other: "%{count} following"
+    controllers:
+      not_allow: "You are not admin"
+      following: "Following"
+      follower: "Followers"
+    show_follow:
+      title: "Follow"
   sessions:
     new:
       name: "name"
@@ -113,3 +128,7 @@ en:
     size_file: "should be less than 5MB"
     posted: "Posted"
     ago: "Ago"
+    title: "Microposts:"
+    count:
+        one: "%{count} microposts"
+        other: "%{count} microposts"

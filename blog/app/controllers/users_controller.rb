@@ -3,13 +3,14 @@ class UsersController < ApplicationController
   before_action :load_user, except: %i(index new create)
   before_action :correct_user, only: %i(edit update)
   before_action :admin_user, only: :destroy
+  before_action :logged_in_user, except: %i(new show create)
 
   def index
     @users = User.page(params[:page]).per Settings.user.per_page
   end
 
   def show
-    @microposts = @user.microposts.page(params[:page])
+    @microposts = @user.feed.page(params[:page])
                             .per Settings.user.per_page
   end
 
@@ -73,7 +74,10 @@ class UsersController < ApplicationController
   end
 
   def admin_user
-    redirect_to(root_url) unless current_user.admin?
+    return if current_user.admin?
+
+    flash[:danger] = t "users.controllers.not_allow"
+    redirect_to root_path
   end
 
   def load_user

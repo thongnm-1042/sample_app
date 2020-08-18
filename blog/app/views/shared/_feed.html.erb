@@ -4,5 +4,5 @@
   </ol>
   <%= paginate @feed_items,
     params: {controller: :static_pages, action: :home},
-    theme: "twitter-bootstrap-3" %>
+    theme: Settings.theme.name_bootstrap %>
 <% end %>

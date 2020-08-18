@@ -9,10 +9,11 @@ class MicropostsController < ApplicationController
       flash[:success] = t "layouts.application.created"
       redirect_to root_url
     else
-      @feed_items = current_user.microposts.page(params[:page])
-                              .per Settings.user.per_page
+      @feed_items = current_user.feed.page(params[:page])
+                        .per Settings.user.per_page
       flash.now[:danger] = t "layouts.application.created_failed"
       render "static_pages/home"
+
     end
   end
 
