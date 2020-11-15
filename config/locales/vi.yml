@@ -1,0 +1,135 @@
+vi:
+  layouts:
+    application:
+      title: "Ung dung don gian"
+      english: "Tieng Anh"
+      vietnam: "Tieng Viet"
+      intro: "Khoa hoc Ruby On Rails"
+      inform_success: "Chao mung den voi Simple App!"
+      inform_failed: "Dang ky tai khoan that bai!"
+      invalid_user: "Nguoi dung khong ton tai!"
+      form: "Form nay bao gom"
+      login_fail: "Email hoac mat khau sai !!!"
+      users: "Nguoi dung"
+      account: "Tai khoan"
+      profile: "Thong tin ca nhan"
+      setting: "Cai dat"
+      logout: "Dang xuat"
+      login: "Dang nhap"
+      remember: "Ghi nho mat khau"
+      login_success: "Dang nhap thanh cong, xin chao!"
+      delete: "Xoa"
+      confirm: "Ban chac chan chua?"
+      activate_success: "Activate thanh cong"
+      activate_fail: "Activate that bai"
+      email_check: "Xin hay kiem tra email cua minh."
+      title_activate: "Xac thuc dang nhap"
+      not_empty: "Khong the de trong"
+      password_reset: "Mat khau da duoc reset."
+      password_reset_not: "Mat khau chua duoc reset."
+      expired: "Da qua han de thay doi mat khau."
+      require_login: "Ban can login truoc da !"
+      activate: "Kich hoat"
+      created: "Tao bai viet thanh cong!!"
+      created_failed: "Tao bai viet that bai!!"
+  static_pages:
+    home:
+      home: "Khoa hoc gioi thieu"
+      title: "Trang chu"
+      signup: "Dang ki ngay!"
+      intro: "Micropost Feed"
+      image: "Logo anh"
+    contact:
+      contact : "Lien lac khoa hoc"
+      title: "Lien lac"
+    help:
+      help : "Tro giup khoa hoc"
+      title: "Tro giup"
+    about:
+      about: "Gioi thieu khoa hoc"
+      title: "Gioi thieu"
+  users:
+    new:
+      title: "Dang ki"
+      text:  "Day se la trang dang ki cho nguoi dung."
+      signup: "Dang ki ngay!"
+      create: "Tao tai khoan"
+      name: "Ten tai khoan"
+      email: "Email"
+      password: "Mat khau"
+      confirmation: "Xac nhan mat khau"
+      update_success: "Cap nhat thong tin thanh cong"
+      update_fail: "Cap nhat thong tin that bai"
+      delete: "Xoa nguoi dung thanh cong"
+      delete_fail: "Xoa nguoi dung that bai!"
+      cautious_login: "Xin hay dang nhap truoc"
+      not_correct: "Hanh dong khong hop le!"
+      notfound: "Khong tim thay nguoi dung!"
+      follow: "Theo doi"
+      un_follow: "Huy theo doi"
+    edit:
+      title: "Cap nhat nguoi dung"
+      change: "Thay doi"
+    index:
+      title: "Nguoi dung"
+    show:
+      microposts: "Bai dang"
+    signup:
+      count:
+        one: "%{count} loi"
+        other: "%{count} loi"
+    followers:
+      count:
+        one: "%{count} nguoi theo doi"
+        other: "%{count} nguoi theo doi"
+    following:
+      count:
+        one: "%{count} dang the doi"
+        other: "%{count} dang the doi"
+    controllers:
+      not_allow: "Ban khong co quyen admin"
+      following: "Theo doi"
+      follower: "Nguoi theo doi"
+    show_follow:
+      title: "Theo doi"
+  sessions:
+    new:
+      name: "Ten dang nhap"
+      email: "email"
+      password: "Mat khau"
+      login: "Dang nhap"
+      signup: "Dang ki tai khoan ngay!"
+      remember_me: "Nho mat khau!"
+      new_member: "Thanh vien moi ?"
+      forgot password: "Quen mat khau?"
+  password_resets:
+    new:
+      title: "Quen mat khau"
+      submit: "Submit"
+    edit:
+      title: "Reset mat khau"
+      submit: "Cap nhat mau khau"
+      password: "Mat khau"
+      password_confirm: "Xac nhan mat khau"
+  user_mailer:
+    password_reset:
+      password_reset: "Reset mat khau!"
+      decription: "Lam theo huong dan!"
+  microposts:
+    new:
+      content: "Tao ra bai viet moi..."
+      post: "Bai viet"
+      count:
+        one: "%{count} bai viet"
+        other: "%{count} bai viet"
+      view: "Xem trang ca nhan cua toi"
+      deleted: "Xoa thanh cong!"
+      deleted_failed: "Xoa that bai"
+    image_valid: "Xin dua anh phu hop"
+    size_file: "Phai be hon 5MB"
+    posted: "Da dang"
+    ago: "Da qua"
+    title: "Cac bai viet:"
+    count:
+        one: "%{count} bai viet"
+        other: "%{count} bai viet"

@@ -1,0 +1,30 @@
+link:
+  home: "https://www.railstutorial.org/"
+  help: "https://www.railstutorial.org/help"
+  about: "https://www.railstutorial.org/book"
+  contact: "https://www.railstutorial.org/contact"
+text:
+  title: "Ruby on Rails Tutorial Sample App"
+  string_validate: !ruby/regexp '/\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i'
+number:
+  max_name: 50
+  max_email: 255
+  min_pass: 6
+  checkbox: 1
+  size: 50
+  time: 2
+  max_content: 140
+  size_less: 5
+  resize_to_limit: "[500, 500]"
+  in: ["image/jpeg", "image/gif", "image/png"]
+user:
+  per_page: 2
+accept:
+  image: "image/jpeg,image/gif,image/png"
+files:
+  number: 1024
+  image: "rails.png"
+  avatar: 30
+theme:
+  name_bootstrap: "twitter-bootstrap-3"
+  image: "200px"

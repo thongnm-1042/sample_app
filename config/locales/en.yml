@@ -1,0 +1,134 @@
+en:
+  layouts:
+    application:
+      title: "Sample app"
+      english: "EngLish"
+      vietnam: "Vietnamese"
+      intro: "Ruby On Rails tutorial"
+      inform_success: "Welcome to Simple App!"
+      inform_failed: "Create account failed!"
+      invalid_user: "User invalid!"
+      form: "The form contains"
+      login_fail: "Invalid email/password combination"
+      users: "Users"
+      account: "Accounts"
+      profile: "Profile"
+      setting: "Settings"
+      logout: "Log out"
+      login: "Log in"
+      remember: "Remember me on this computer"
+      login_success: "Log in successfull, hello!"
+      delete: "delete"
+      confirm: "You sure?"
+      activate_success: "Activate successfull"
+      activate_fail: "Activate failed"
+      email_check: "Please check your email to activate your account."
+      title_activate: "Account activation"
+      not_empty: "can't be empty"
+      password_reset: "Password has been reset."
+      password_reset_not: "Password hasn't been reset."
+      expired: "Password reset has expired."
+      require_login: "You have to login first!"
+      activate: "Activate"
+      created: "Post Created!!"
+      created_failed: "Post Created failed!!"
+  static_pages:
+    home:
+      home: "Ruby on Rails Tutorial"
+      title: "Home"
+      signup: "Sign up now!"
+      intro: "Micropost Feed"
+      image: "Rails logo"
+    contact:
+      contact : "Ruby on Rails Contact"
+      title: "Contact"
+    help:
+      help : "Rails Tutorial Help page"
+      title: "Help"
+    about:
+      about: "Rails About"
+      title: "About"
+  users:
+    new:
+      title: "Sign up"
+      text:  "This will be a signup page for new users."
+      signup: "Sign up now!"
+      create: "Create my account"
+      name: "name"
+      email: "email"
+      password: "password"
+      confirmation: "password confirmation"
+      update_success: "Profile updated"
+      update_fail: "Profile failed"
+      delete: "User deleted"
+      delete_fail: "User deleted failed !"
+      cautious_login: "Please log in."
+      not_correct: "Invalid action!"
+      not_found: "Invalid user!"
+      follow: "Follow"
+      un_follow: "Unfollow"
+      title: "Update User"
+      change: "Change"
+    index:
+      title: "All users"
+    show:
+      microposts: "Microposts"
+    signup:
+      count:
+        one: "%{count} error"
+        other: "%{count} errors"
+    followers:
+      count:
+        one: "%{count} followers"
+        other: "%{count} followers"
+    following:
+      count:
+        one: "%{count} following"
+        other: "%{count} following"
+    controllers:
+      not_allow: "You are not admin"
+      following: "Following"
+      follower: "Followers"
+    show_follow:
+      title: "Follow"
+  sessions:
+    new:
+      name: "name"
+      email: "email"
+      password: "password"
+      login: "login"
+      signup: "Sign up now!"
+      remember_me: "remember_me"
+      new_member: "New user ?"
+      forgot password: "forgot password?"
+  password_resets:
+    new:
+      title: "Forgot password"
+      submit: "Submit"
+    edit:
+      title: "Reset password"
+      submit: "Update password"
+      password: "Password"
+      password_confirm: "Password_confirmation"
+  user_mailer:
+    password_reset:
+      password_reset: "Reset Your Password!"
+      decription: "Follow the instruction!"
+  microposts:
+    new:
+      content: "Compose new micropost..."
+      post: "Post"
+      count:
+        one: "%{count} micropost"
+        other: "%{count} microposts"
+      view: "view my profile"
+      deleted: "Micropost created!"
+      deleted_failed: "Micropost created failed!"
+    image_valid: "must be a valid image format"
+    size_file: "should be less than 5MB"
+    posted: "Posted"
+    ago: "Ago"
+    title: "Microposts:"
+    count:
+        one: "%{count} microposts"
+        other: "%{count} microposts"

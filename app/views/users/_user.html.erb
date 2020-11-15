@@ -1,0 +1,8 @@
+<li>
+  <%= gravatar_for user, size: Settings.number.size %>
+  <%= link_to user.name, user %>
+  <% if current_user.admin? && !current_user?(user) %>
+    | <%= link_to t("layouts.application.delete"), user, method: :delete,
+    data: { confirm: t("layouts.application.confirm") } %>
+  <% end %>
+</li>
