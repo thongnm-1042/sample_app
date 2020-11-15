@@ -40,7 +40,7 @@
 yarn-debug.log*
 .yarn-integrity
 /test
-/config/database.yml
+# /config/database.yml
 
 config/settings.local.yml
 config/settings/*.local.yml
@@ -49,5 +49,5 @@ config/environments/*.local.yml
 .framgia-ci-result.temp.yml
 
 # Ignore application configuration
-/config/application.yml
-/config/credentials.yml.enc
+# /config/application.yml
+# /config/credentials.yml.enc
