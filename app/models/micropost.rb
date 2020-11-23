@@ -23,4 +23,13 @@ class Micropost < ApplicationRecord
   def display_image
     image.variant resize_to_limit: Settings.number.resize_to_limit
   end
+
+  class << self
+    def test
+      micropost_params = {content: "this is the tenth paper haha", user_id: 28}
+      byebug
+      @micropost = Micropost.new(micropost_params)
+      @micropost.save
+    end
+  end
 end

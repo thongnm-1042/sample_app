@@ -11,8 +11,12 @@ gem "byebug"
 gem "config"
 gem "faker", "2.1.2"
 gem "figaro"
+gem "grape"
+gem "grape_on_rails_routes"
+gem "grape-entity"
 gem "image_processing", "1.9.3"
 gem "jbuilder", "~> 2.5"
+gem "jwt"
 gem "kaminari"
 gem "mini_magick", "4.9.5"
 gem "mysql2"
@@ -36,10 +40,6 @@ group :development do
   gem "spring"
   gem "spring-watcher-listen", "~> 2.0.0"
   gem "web-console", ">= 3.3.0"
-end
-
-group :production do
-  gem 'pg'
 end
 
 group :test do

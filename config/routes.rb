@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  mount API::Base, at: "/"
   scope "(:locale)", locale: /en|vi/ do
     root "static_pages#home"
 
